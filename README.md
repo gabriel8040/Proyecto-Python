@@ -33,8 +33,6 @@ Este enfoque permite a analistas de seguridad obtener una **visión rápida y de
 ✅ Comparación entre tráfico malicioso y benigno  
 ✅ Exportación de análisis para informes
 
-
-
 ---
 
 ## 📊 Análisis Realizado
