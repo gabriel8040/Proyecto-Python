@@ -35,3 +35,58 @@ Este enfoque permite a analistas de seguridad obtener una **visión rápida y de
 
 
 
+---
+
+## 📊 Análisis Realizado
+
+La app analiza registros que contienen, entre otros:
+
+- Fecha y hora del evento
+- IP de origen y destino
+- Categoría del evento
+- Protocolo utilizado
+- Mensaje con descripción técnica
+
+A partir de esto se realizan:
+
+### 🔎 Clasificación de Gravedad
+
+Se analizan los mensajes de los logs buscando palabras clave como:
+
+| Palabra clave                         | Gravedad asignada |
+|--------------------------------------|-------------------|
+| `port scan`, `flood`, `ips detection`| 🚨 Crítico         |
+| `dropped`, `unhandled`               | ⚠️ Alto            |
+| `assigned ip address`                | 🟡 Medio           |
+| Otros                                | 🟢 Bajo            |
+
+---
+
+### 📈 Visualizaciones Incluidas
+
+- **Gráfico de barras**: eventos por categoría
+- **Mapa de calor**: actividad por hora y tipo de ataque
+- **Gráfico circular**: proporción de eventos críticos
+- **Histograma**: cantidad de eventos por hora del día
+- **Gráfico de dispersión**: tipos de ataques vs. hora
+- **Tablas dinámicas**: IPs más activas y frecuentes
+
+Todas las gráficas son interactivas y se actualizan al aplicar filtros.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+| Tecnología  | Descripción                             |
+|-------------|-----------------------------------------|
+| **Python**  | Lenguaje principal para análisis        |
+| **Pandas**  | Limpieza, transformación y análisis     |
+| **Streamlit** | Framework web interactivo para Python |
+| **Plotly**  | Visualizaciones interactivas            |
+| **Seaborn** | Gráficos estadísticos                   |
+| **Matplotlib** | Soporte adicional de visualización   |
+
+
+
+
+
