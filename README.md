@@ -85,6 +85,11 @@ Todas las gráficas son interactivas y se actualizan al aplicar filtros.
 | **Matplotlib** | Soporte adicional de visualización   |
 
 
+---
+Luego, instalamos las dependecias ejecutando pip install -r requirements.txt para posteriormente ejecutar en un cmd el siguiente comando streamlit run app.py
+
+
+
 
 
 
